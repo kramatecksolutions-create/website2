@@ -43,7 +43,7 @@ export default function App() {
           <img src="/assets/krama-favicon-black.png" alt="KramaTek icon" />
           <h2>Let’s build something intelligent.</h2>
           <p>Reach out for AI platforms, automation, data products, and digital application development.</p>
-          <div className="contactLinks"><a href="mailto:info@kramatek.com"><Mail size={18}/> info@kramatek.com</a><a href="tel:+12152856549"><Phone size={18}/> +1 (215) 285-6549</a></div>
+          <div className="contactLinks"><a href="mailto:info@kramatek.com"><Mail size={18}/> info@kramatek.com</a><a href="tel:+919110767628"><Phone size={18}/> +91 (911) 076-7628</a></div>
         </div>
       </section>
 
