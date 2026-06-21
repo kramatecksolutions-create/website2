@@ -1,16 +1,12 @@
-# KRAMA Tech Website
+# KramaTek Website
 
-Updated light sand theme.
+Vercel settings:
+- Framework: Vite
+- Build command: npm run build
+- Output directory: dist
 
-## Local run
-
+Local run:
 ```bash
 npm install
 npm run dev
 ```
-
-## Vercel
-
-Push this folder to GitHub, then import the repo in Vercel.
-Build command: `npm run build`
-Output directory: `dist`
