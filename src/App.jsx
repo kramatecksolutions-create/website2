@@ -81,7 +81,7 @@ export default function App() {
             const Icon = s.icon;
             return (
               <article className="card" key={s.title}>
-                <Icon className="cardIcon" size={500} />
+                <Icon className="cardIcon" size={100} />
                 <h3>{s.title}</h3>
                 <p>{s.text}</p>
               </article>
