@@ -51,7 +51,7 @@ export default function App() {
             alt="KramaTek logo"
             style={{
               width: '1000%',
-              maxWidth: '700px',
+              maxWidth: '800px',
               filter: 'drop-shadow(0 0 30px rgba(217, 164, 65, 0.35))',
               transform: 'translateY(-6px)',
             }}
