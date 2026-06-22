@@ -50,8 +50,8 @@ export default function App() {
             src="/assets/krama-logo-full.png"
             alt="KramaTek logo"
             style={{
-              width: '100%',
-              maxWidth: '700px',
+              width: '500%',
+              maxWidth: '1000px',
               filter: 'drop-shadow(0 0 30px rgba(217, 164, 65, 0.35))',
               transform: 'translateY(-6px)',
             }}
@@ -81,7 +81,7 @@ export default function App() {
             const Icon = s.icon;
             return (
               <article className="card" key={s.title}>
-                <Icon className="cardIcon" size={100} />
+                <Icon className="cardIcon" size={500} />
                 <h3>{s.title}</h3>
                 <p>{s.text}</p>
               </article>
