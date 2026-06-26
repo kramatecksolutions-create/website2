@@ -66,7 +66,7 @@ export default function App() {
         </div>
       </section>
 
-      <footer className="footer">© 2026 KramaTek. Ancient Wisdom. Future Intelligence.</footer>
+      <footer className="footer">© 2025 KramaTek. Ancient Wisdom. Future Intelligence.</footer>
     </main>
   );
 }
