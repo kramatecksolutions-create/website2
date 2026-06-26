@@ -8,98 +8,17 @@ const services = [
   { icon: Cloud, title: 'Digital Platforms', text: 'Modern websites, cloud apps, and scalable digital products for growth.' },
 ];
 
-const clients = [
-  { name: 'SiRA', logo: '/assets/client-sira.png' },
-  { name: 'Fruges', logo: '/assets/client-fruges.png' },
-  { name: 'Ventley Tech', logo: '/assets/client-ventley.png' },
-  { name: 'Quanteon', logo: '/assets/client-quanteon.png' },
-  { name: 'Alphasmart Solutions', logo: '/assets/client-alphasmart.png' },
-  { name: 'Technodrive Software Solutions', logo: '/assets/client-technodrive.png' },
-];
-
-const clientsStyles = `
-.clientsSection {
-  padding: 76px 0 82px;
-  text-align: center;
-  border-top: 1px solid rgba(93, 61, 34, 0.12);
-  border-bottom: 1px solid rgba(93, 61, 34, 0.12);
-}
-
-.clientsSection .sectionTag {
-  display: inline-block;
-  margin-bottom: 14px;
-}
-
-.clientsSection h2 {
-  margin: 0 0 38px;
-  color: #3b2414;
-  font-size: clamp(28px, 3vw, 42px);
-  line-height: 1.1;
-  font-weight: 900;
-  letter-spacing: -0.04em;
-}
-
-.clientGrid {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 18px;
-  align-items: center;
-}
-
-.clientItem {
-  height: 96px;
-  background: rgba(255, 252, 246, 0.86);
-  border: 1px solid #e6d7bd;
-  border-radius: 18px;
-  padding: 14px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 14px 34px rgba(61, 39, 24, 0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.clientItem:hover {
-  transform: translateY(-5px);
-  border-color: #d8b879;
-  box-shadow: 0 18px 42px rgba(61, 39, 24, 0.10);
-}
-
-.clientItem img {
-  width: 100%;
-  max-width: 150px;
-  max-height: 58px;
-  object-fit: contain;
-  display: block;
-}
-
-@media (max-width: 1100px) {
-  .clientGrid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 680px) {
-  .clientsSection {
-    padding: 52px 0 58px;
-  }
-
-  .clientGrid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-  }
-
-  .clientItem {
-    height: 86px;
-    padding: 12px;
-  }
-}
-`;
-
 export default function App() {
   return (
     <main className="site">
-      <style>{clientsStyles}</style>
+      <style>{`
+.clientsSection{padding:80px 0;text-align:center}
+.clientGrid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;margin-top:40px}
+.clientItem{height:110px;border:1px solid rgba(93,61,34,.08);border-radius:18px;background:rgba(255,252,246,.9);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(61,39,24,.05)}
+.clientItem img{width:78%;max-height:64px;object-fit:contain}
+@media(max-width:1100px){.clientGrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.clientGrid{grid-template-columns:repeat(2,1fr)}}
+`}</style>
 
       <header className="header">
         <a className="brand" href="#home"><img src="/assets/krama-logo-header.png" alt="KramaTek" /></a>
@@ -117,20 +36,17 @@ export default function App() {
         <div className="heroCard"><img src="/assets/krama-logo-full.png" alt="KramaTek logo" /></div>
       </section>
 
-      <section className="clientsSection" id="clients">
-        <span className="sectionTag">ORGANIZATIONS WE SUPPORT</span>
-        <h2>Serving Government & Enterprise</h2>
+      
+<section className="clientsSection" id="clients">
+<span className="sectionTag">ORGANIZATIONS WE SUPPORT</span>
+<h2>Serving Government & Enterprise</h2>
+<div className="clientGrid">
+{["client-sira.png","client-fruges.png","client-ventley.png","client-quanteon.png","client-alphasmart.png","client-technodrive.png"].map((logo)=>(
+<div className="clientItem" key={logo}><img src={`/assets/${logo}`} alt={logo}/></div>
+))}
+</div></section>
 
-        <div className="clientGrid">
-          {clients.map((client) => (
-            <div className="clientItem" key={client.name}>
-              <img src={client.logo} alt={client.name} />
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section id="about" className="section about">
+<section id="about" className="section about">
         <div><span className="sectionTag">ABOUT</span><h2>Technology with clarity, purpose, and intelligence.</h2></div>
         <p>KramaTek is focused on building simple, useful, and scalable technology solutions for real-world business problems. We combine AI, automation, data, and digital engineering to create systems that are easy to use and ready to grow.</p>
       </section>
