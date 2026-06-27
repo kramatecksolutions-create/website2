@@ -12,12 +12,80 @@ export default function App() {
   return (
     <main className="site">
       <style>{`
-.clientsSection{padding:80px 0;text-align:center}
-.clientGrid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;margin-top:40px}
-.clientItem{height:110px;border:1px solid rgba(93,61,34,.08);border-radius:18px;background:rgba(255,252,246,.9);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(61,39,24,.05)}
-.clientItem img{width:78%;max-height:64px;object-fit:contain}
-@media(max-width:1100px){.clientGrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:700px){.clientGrid{grid-template-columns:repeat(2,1fr)}}
+.clientsSection{
+  padding:80px 0;
+  text-align:center;
+  overflow:hidden;
+}
+.clientMarquee{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+  margin-top:40px;
+  padding:4px 0 10px;
+}
+.clientMarquee::before,
+.clientMarquee::after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:120px;
+  height:100%;
+  z-index:2;
+  pointer-events:none;
+}
+.clientMarquee::before{
+  left:0;
+  background:linear-gradient(90deg, var(--sand) 0%, rgba(255,255,255,0) 100%);
+}
+.clientMarquee::after{
+  right:0;
+  background:linear-gradient(270deg, var(--sand) 0%, rgba(255,255,255,0) 100%);
+}
+.clientTrack{
+  display:flex;
+  gap:22px;
+  width:max-content;
+  animation:clientScroll 34s linear infinite;
+}
+.clientMarquee:hover .clientTrack{
+  animation-play-state:paused;
+}
+.clientItem{
+  width:260px;
+  height:104px;
+  border:1px solid rgba(93,61,34,.08);
+  border-radius:18px;
+  background:rgba(255,252,246,.9);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 22px rgba(61,39,24,.05);
+  flex:0 0 auto;
+}
+.clientItem img{
+  width:82%;
+  max-height:72px;
+  object-fit:contain;
+}
+@keyframes clientScroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(calc(-50% - 11px));}
+}
+@media(max-width:700px){
+  .clientItem{
+    width:220px;
+    height:92px;
+  }
+  .clientItem img{
+    width:84%;
+    max-height:62px;
+  }
+  .clientMarquee::before,
+  .clientMarquee::after{
+    width:55px;
+  }
+}
 `}</style>
 
       <header className="header">
@@ -66,7 +134,7 @@ export default function App() {
         </div>
       </section>
 
-      <footer className="footer">© 2025 KramaTek. Ancient Wisdom. Future Intelligence.</footer>
+      <footer className="footer">© 2026 KramaTek. Ancient Wisdom. Future Intelligence.</footer>
     </main>
   );
 }
