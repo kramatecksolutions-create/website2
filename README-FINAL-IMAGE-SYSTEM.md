@@ -1,4 +1,4 @@
-# KramaTek Final Image-System Release
+# KramaTek Final -System Release
 
 This release changes the visual asset system only and preserves the working application structure.
 
