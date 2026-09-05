@@ -29,3 +29,6 @@ Framework: Vite
 Build Command: npm run build
 Output Directory: dist
 Root Directory: ./
+
+
+Final Deployment
