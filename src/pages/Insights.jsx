@@ -1,4 +1,0 @@
-import React from 'react'
-import PageHero from '../components/PageHero'
-import {insights} from '../data/siteData'
-export default function Insights(){return <><PageHero eyebrow="INSIGHTS" title="Ideas for practical enterprise intelligence." description="Perspectives on AI, data, automation, cloud and digital engineering." image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=85"/><section className="section services-section"><div className="container"><div className="insight-grid">{insights.map(x=><a className="insight-card" href={`/insights/${x.slug}`} key={x.slug}><div className="insight-image visual-bg" style={{backgroundImage:`linear-gradient(135deg,rgba(40,22,12,.08),rgba(40,22,12,.24)),url("${x.image}")`}}><span>{x.category}</span></div><div><span>{x.category}</span><h3>{x.title}</h3><p>{x.summary}</p><b>Read insight →</b></div></a>)}</div></div></section></>}

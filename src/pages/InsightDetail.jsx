@@ -1,3 +1,0 @@
-import React from 'react'
-import {ArrowLeft} from 'lucide-react'
-export default function InsightDetail({item}){return <><section className="article-hero"><div className="container article-hero-grid"><div><a className="back-link" href="/insights"><ArrowLeft size={15}/> Insights</a><span>{item.category}</span><h1>{item.title}</h1><p>{item.summary}</p></div><div className="article-image visual-bg" style={{backgroundImage:`linear-gradient(135deg,rgba(40,22,12,.08),rgba(40,22,12,.26)),url("${item.image}")`}}><span>{item.category}</span></div></div></section><article className="article-body container">{item.body.map((p,i)=><p key={i}>{p}</p>)}</article></>}
