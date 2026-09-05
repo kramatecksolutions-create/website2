@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+<rect width="800" height="520" fill="#fffbf0"/>
+<rect x="160" y="130" width="480" height="260" rx="22" fill="#fff" opacity=".8"/>
+<rect x="180" y="280" width="50" height="80" rx="6" fill="#e8820c" opacity=".5"/>
+<rect x="246" y="248" width="50" height="112" rx="6" fill="#e8820c" opacity=".65"/>
+<rect x="312" y="220" width="50" height="140" rx="6" fill="#2D7A1F" opacity=".6"/>
+<rect x="378" y="196" width="50" height="164" rx="6" fill="#2D7A1F" opacity=".75"/>
+<rect x="444" y="208" width="50" height="152" rx="6" fill="#e8820c" opacity=".55"/>
+<rect x="510" y="176" width="50" height="184" rx="6" fill="#2D7A1F" opacity=".8"/>
+<text x="205" y="278" font-family="sans-serif" font-size="10" fill="#4c2b19" text-anchor="middle" opacity=".5">Q1</text>
+<text x="271" y="278" font-family="sans-serif" font-size="10" fill="#4c2b19" text-anchor="middle" opacity=".5">Q2</text>
+<text x="337" y="278" font-family="sans-serif" font-size="10" fill="#4c2b19" text-anchor="middle" opacity=".5">Q3</text>
+<text x="403" y="278" font-family="sans-serif" font-size="10" fill="#4c2b19" text-anchor="middle" opacity=".5">Q4</text>
+<rect x="180" y="150" width="460" height="30" rx="8" fill="#e8820c" opacity=".08"/>
+<text x="400" y="170" font-family="sans-serif" font-size="13" fill="#4c2b19" text-anchor="middle" font-weight="700" opacity=".5">FINANCIAL INTELLIGENCE PLATFORM</text>
+</svg>
