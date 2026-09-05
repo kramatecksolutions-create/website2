@@ -8,7 +8,7 @@ Production package focused on the final visual system and contact presentation.
 - Image containers now use the same 16:9 aspect ratio, preventing the previous top/bottom cropping caused by fixed-height containers.
 - Existing routes/navigation were preserved.
 
-## Contact
+## Contact Office
 Awfis Premium Nordwest,
 4th Floor, Nordwest,
 P Janardhan Reddy Nagar, Gachibowli,
