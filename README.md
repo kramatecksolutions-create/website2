@@ -50,7 +50,7 @@ Our focus is not technology for technology's sake. We combine domain understandi
 
 ---
 
-## Our Approach
+## Our Approach and Vision
 
 KramaTek follows a practical transformation model:
 
