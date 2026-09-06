@@ -56,12 +56,13 @@ export default function Contact(){
           <div className="hero-actions">
             <a
               className="btn primary"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@kramatek.com&su=KramaTek%20Project%20Inquiry"
+              href="https://outlook.office.com/mail/deeplink/compose?to=info@kramatek.com&subject=KramaTek%20Project%20Inquiry"
               target="_blank"
               rel="noopener noreferrer"
             >
               Email KramaTek <ArrowRight size={17}/>
             </a>
+          
             <a className="btn secondary" href="/">Back to Home</a>
           </div>
           
