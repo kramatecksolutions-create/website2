@@ -62,7 +62,7 @@ Our goal is to turn emerging technologies such as AI into reliable, secure, and 
 
 ---
 
-## Website Technology and Information
+## Website Technology
 
 The KramaTek website is built using a modern React-based frontend architecture with:
 
