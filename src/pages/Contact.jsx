@@ -49,9 +49,16 @@ export default function Contact(){
           </div>
 
           <div className="hero-actions">
-            <a className="btn primary" href="mailto:info@kramatek.com">Email KramaTek <ArrowRight size={17}/></a>
+            <a
+              className="btn primary"
+              href="mailto:info@kramatek.com?subject=KramaTek%20Project%20Inquiry"
+            >
+              Email KramaTek <ArrowRight size={17}/>
+            </a>
+
             <a className="btn secondary" href="/">Back to Home</a>
           </div>
+          
         </div>
 
         <div className="contact-panel">
