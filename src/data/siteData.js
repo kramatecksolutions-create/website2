@@ -45,7 +45,7 @@ import alphasmart from '../assets/clients/alphasmart.svg'
 import technodrive from '../assets/clients/technodrive.svg'
 
 export const heroStories=[
-{eyebrow:'AI-FIRST ENTERPRISE TECHNOLOGY',title:'Enterprise technology,',accent:'engineered for impact.',text:'AI, cloud and digital engineering brought together to modernize operations and build resilient capabilities.',image:heroAI},
+{eyebrow:'AI-FIRST • END-TO-END ENGINEERING',title:'Enterprise technology,',accent:'engineered for impact.',text:'From development and quality engineering to operations, we build, validate and run intelligent enterprise solutions.',image:heroAI},
 {eyebrow:'MODERN CLOUD & DATA',title:'Build foundations',accent:'ready for intelligence.',text:'Modern platforms and engineering that make data, applications and AI work together reliably.',image:heroCloud},
 {eyebrow:'DECISION INTELLIGENCE',title:'Turn signals',accent:'into better decisions.',text:'Analytics and AI that help teams understand what matters and act with confidence.',image:heroIntelligence},
 {eyebrow:'DIGITAL MODERNIZATION',title:'Modernize without',accent:'losing momentum.',text:'Cloud, applications, automation and AI designed around real enterprise workflows.',image:heroDigital}
